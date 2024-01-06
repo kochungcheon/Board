@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Board/style.css">
+  <style>
+    body {
+      font-family: '맑은 고딕', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #03C75A;
+      color: #FFFFFF;
+      padding: 20px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
+
+    .search-bar input[type="text"] {
+      width: 300px;
+      height: 30px;
+      padding: 5px;
+      border: none;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .search-bar input[type="submit"] {
+      background-color: #03C75A;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    }
+
+    .post-list {
+      background-color: #FFFFFF;
+      margin-top: 20px;
+      padding: 20px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .post {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+    }
+
+    .post-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .post-date {
+      color: #999999;
+      font-size: 14px;
+    }
+
+    .pagination {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .pagination a {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #03C75A;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 5px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-write {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #03C75A;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .user-buttons {
+      text-align: right;
+      margin-top: -40px;
+    }
+
+    .user-buttons a {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #03C75A;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-left: 5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+  <title>마이 블로그</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>마이 블로그</h1>
+      <div class="user-buttons">
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" name="search" placeholder="검색어를 입력하세요.">
+      <input type="submit" value="검색">
+    </div>
+    
+    <div class="post-list">
+      <div class="post">
+        <h2 class="post-title" id="title"><a href="../Board/detail.html">제목</a></h2>
+        <p class="post-date" id="date">작성일: 2024년 1월 6일</p>
+      </div>
+      <div class="post">
+        <h2 class="post-title" id="title"><a href="../Board/detail.html">제목</a></h2>
+        <p class="post-date" id="date">작성일: 2024년 1월 6일</p>
+      </div>
+      <div class="post">
+        <h2 class="post-title" id="title"><a href="../Board/detail.html">제목</a></h2>
+        <p class="post-date" id="date">작성일: 2024년 1월 6일</p>
+      </div>
+      <div class="post">
+        <h2 class="post-title" id="title"><a href="../Board/detail.html">제목</a></h2>
+        <p class="post-date" id="date">작성일: 2024년 1월 6일</p>
+      </div>
+      <div class="post">
+        <h2 class="post-title" id="title"><a href="../Board/detail.html">제목</a></h2>
+        <p class="post-date" id="date">작성일: 2024년 1월 6일</p>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
+  </div>
+  <div class="btn-write">
+    <a href="../Board/write.html">글쓰기</a>
+  </div>
+</body>
+</html>

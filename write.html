@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Board/style.css">
+    <title>글쓰기</title>
+    <style>
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header1 {
+    background-color: #1EC800; 
+    padding: 10px;
+    color: #fff;
+    text-align: center; 
+}
+
+.card-header1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-write {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.myinfo input[type="text"],
+.myinfo input[type="password"],
+.title-w input[type="text"],
+.msg textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-w {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-w a {
+    background-color: #1EC800; 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-w a:hover {
+    background-color: #3FD600; 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header1">
+            <h1><a href="../HTML/index.html">게시판</a></h1>
+        </div>
+        <div class="card-write">
+            <div class="title-w">
+                <input type="text" id="title" placeholder="제목을 입력하세요.">
+            </div>
+            <div class="msg">
+                <textarea id="content" placeholder="내용을 입력하세요."></textarea>
+                <input type="file" name="" id="">
+            </div>
+        </div>
+        <div class="btn-w"><a href="../HTML/index.html">작성</a></div>
+    </div>
+</body>
+</html>
